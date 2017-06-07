@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding='UTF-8' ?>
+<context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+    <Resource name="jdbc/msg"
+              auto="container"
+              type="javax.sql.DataSource"
+              username="root"
+              password="i696608!"
+              driverClassName="com.mysql.jdbc.Driver"
+              maxActive="20"
+              maxIdle="20" />
+</context>

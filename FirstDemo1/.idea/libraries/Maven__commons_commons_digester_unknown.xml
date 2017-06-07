@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: commons:commons-digester:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons/commons-digester/unknown/commons-digester-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/commons/commons-digester/unknown/commons-digester-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/commons/commons-digester/unknown/commons-digester-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
