@@ -7,8 +7,8 @@
  <display-name>Archetype Created Web Application</display-name>
 
     <servlet>
-    <servlet-name>HelloServlet</servlet-name>
-    <servlet-class>Control.HelloServlet</servlet-class>
+    <servlet-name>RetrieveServlet</servlet-name>
+    <servlet-class>Control.RetrieveServlet</servlet-class>
 
     </servlet>
     <servlet>
@@ -30,8 +30,8 @@
         <servlet-class>Control.UpdateServlet</servlet-class>
     </servlet>
 <servlet-mapping>
-  <servlet-name>HelloServlet</servlet-name>
-  <url-pattern>/Control/HelloServlet</url-pattern>
+  <servlet-name>RetrieveServlet</servlet-name>
+  <url-pattern>/Control/RetrieveServlet</url-pattern>
 </servlet-mapping>
 
 

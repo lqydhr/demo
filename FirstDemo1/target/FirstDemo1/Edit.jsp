@@ -1,4 +1,5 @@
-<%@ page import="Mod.DownloadSolutions" %><%--
+<%@ page import="Mod.DownloadSolutionsEntity" %>
+<%--
   Created by IntelliJ IDEA.
   User: liuqingyuan
   Date: 2017/6/5
@@ -13,7 +14,7 @@
 
 <link href="bootStrap.css" rel="stylesheet" type="text/css"/>
 <%
-    DownloadSolutions editSolution=(DownloadSolutions)request.getAttribute("entity");
+    DownloadSolutionsEntity editSolution=(DownloadSolutionsEntity)request.getAttribute("entity");
 %>
 <script>
     var op=document.createElement("option");

@@ -1,6 +1,7 @@
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%@ page import="Mod.User" %>
-<%@ page import="Mod.DownloadSolutions" %>
+<%@ page import="Mod.DownloadSolutionsEntity" %>
+<%@ page import="Mod.DownloadSolutionsEntity" %>
 
 <%--<script type="text/javascript">
 
@@ -38,7 +39,7 @@ function Edit(EditId){
 
 <body>
 
-<% List<DownloadSolutions> list =(List<DownloadSolutions>)request.getAttribute("list");
+<% List<DownloadSolutionsEntity> list =(List<DownloadSolutionsEntity>)request.getAttribute("list");
 %>
 <table class="table table-striped" width="95%" >
    <tr>
@@ -84,7 +85,7 @@ function Edit(EditId){
     </tr>
 <%
     for (int j=0; j<list.size();j++){
-        DownloadSolutions download =list.get(j);
+        DownloadSolutionsEntity download =list.get(j);
 
 %>
 <tr>

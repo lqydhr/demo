@@ -1,6 +1,6 @@
 package Control;
 
-import Service.TestService;
+import Service.DownloadSolutionService;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -16,20 +16,19 @@ import java.io.IOException;
 @WebServlet(name = "DelServlet")
 public class DelServlet extends HttpServlet {
     @Inject
-    private TestService testServiceImpl;
+    private DownloadSolutionService downloadSolutionServiceImpl;
+
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String Id=request.getParameter("id");
-        if (Id!=null&&!"".equals(Id))
-        try {
-            testServiceImpl.del(Integer.valueOf(Id));
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        request.getRequestDispatcher("HelloServlet").forward(request,response);
+        String id = request.getParameter("id");
+        if (id != null && !"".equals(id))
+            try {
+                downloadSolutionServiceImpl.del(Integer.valueOf(id));
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        request.getRequestDispatcher("RetrieveServlet").forward(request, response);
     }
-
-
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        doPost(request,response);
+        doPost(request, response);
     }
 }
